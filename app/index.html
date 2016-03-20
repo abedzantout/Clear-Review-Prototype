@@ -1,9 +1,9 @@
-<!doctype html>
-<html lang="">
+<!doctype HTML>
+<html lang="eng">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="">
+  <meta name="description" content="An application that allows student to review a professor or a course">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clear Review</title>
 
@@ -59,29 +59,28 @@
 
 
 <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-  <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs ">
+  <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary mdl-layout__header--waterfall">
     <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-      <div class="sw">
+      <div class="search-bar ">
         <form>
           <a href="#" class="logo" title="clear_review_logo"></a>
           <input type="search" class="search" placeholder="Search..."/>
-          <button class="go"><span class="entypo-search"></span></button>
+          <button class="go"><i class="material-icons">search</i></button>
         </form>
       </div>
     </div>
 
 
-
-    <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+    <div class="mdl-layout--large-screen-only mdl-layout__header-row ">
     </div>
     <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
       <!--Main Navigation-->
-      <nav class="mdl-navigation">
         <a href="#overview" class="mdl-layout__tab  is-active">Courses</a>
         <a href="#features" class="mdl-layout__tab ">Professors</a>
         <a href="#myCourses" class="mdl-layout__tab ">My courses</a>
-      </nav>
+
+      <!-- End of main navigation-->
       <!--<button
             class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent"
             id="add">
@@ -90,7 +89,7 @@
           </button> -->
     </div>
   </header>
-  <main class="mdl-layout__content">
+  <main class="mdl-layout__content ">
     <div class="mdl-layout__tab-panel is-active" id="overview">
       <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
         <header
@@ -356,7 +355,7 @@
   </main>
 </div>
 
-<script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+<script src="scripts/Libraries/material.js"></script>
 <!-- build:js(app/) ../../scripts/main.min.js -->
 <script src="scripts/main.js"></script>
 <!-- endbuild -->
