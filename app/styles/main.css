@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 Google Inc. All Rights Reserved.
+ * Copyright 2016 E3A Inc. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,11 +23,26 @@ html, body {
   font-family: 'Roboto', 'Helvetica', sans-serif;
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #e8eaf6;
+  -webkit-font-smoothing: antialiased;
+
 }
+
+*, div {
+  box-sizing: border-box;
+}
+
 .mdl-demo .mdl-layout__header-row {
   padding-left: 40px;
 }
-.mdl-demo .mdl-layout.is-small-screen .mdl-layout__header-row h3 {
+
+.mdl-demo .mdl-layout--large-screen-only h1 {
+  font-size: inherit;
+}
+
+.mdl-demo .mdl-layout.is-small-screen .mdl-layout__header-row h1 {
   font-size: inherit;
 }
 .mdl-demo .mdl-layout__tab-bar-button {
@@ -43,13 +58,14 @@ html, body {
 .mdl-demo .mdl-layout__tab-bar-container {
   height: 64px;
 }
+
 .mdl-demo .mdl-layout__tab-bar {
   padding: 0;
-  padding-left: 16px;
   box-sizing: border-box;
   height: 100%;
   width: 100%;
 }
+
 .mdl-demo .mdl-layout__tab-bar .mdl-layout__tab {
   height: 64px;
   line-height: 64px;
@@ -177,7 +193,8 @@ html, body {
 .mdl-demo section.section--center .section__text:not(:last-child) {
   border-bottom: 1px solid rgba(0,0,0,.13);
 }
-.mdl-demo .mdl-card .mdl-card__supporting-text > h3:first-child {
+
+.mdl-demo .mdl-card .mdl-card__supporting-text > h1:first-child {
   margin-bottom: 24px;
 }
 .mdl-demo .mdl-layout__tab-panel:not(#overview) {
@@ -198,7 +215,7 @@ html, body {
   flex-direction: column;
 }
 .mdl-demo .toc h4 {
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   margin-top: 0;
 }
 .mdl-demo .toc a {

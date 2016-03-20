@@ -4,6 +4,7 @@
 # TEAM
 
   <name> -- <role> -- <twitter>
+  abed zantout -- Main Developer -- github.com/abedzantout
 
 # THANKS
 
@@ -11,4 +12,4 @@
 
 # TECHNOLOGY COLOPHON
 
-  HTML5, CSS3
+  HTML5, CSS3, Javascript, AngularJS
