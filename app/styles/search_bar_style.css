@@ -182,7 +182,7 @@ will be correctly compiled during `gulp serve` and `gulp`
   left: 0px;
   */
   margin-top: -6px;
-  background-color: #ffffff;
+  background-color: lightslategray;
 }
 
 .bp-autocomplete-searching {

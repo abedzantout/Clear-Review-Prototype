@@ -52,7 +52,7 @@ function autocomplete(parent) {
         .append("form")
         .attr("id", "form");
 
-      var heading = searchBar
+      var heading = container
         .append("a")
         .attr("class", "logo");
 
