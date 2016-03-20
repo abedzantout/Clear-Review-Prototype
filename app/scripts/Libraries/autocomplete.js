@@ -1,6 +1,5 @@
 /**
  Copyright (c) 2016 Abed Zantout, E3A Inc.
-
  Permission is hereby granted, free of charge, to any person
  obtaining a copy of this software and associated documentation
  files (the "Software"), to deal in the Software without
@@ -9,10 +8,8 @@
  copies of the Software, and to permit persons to whom the
  Software is furnished to do so, subject to the following
  conditions:
-
  The above copyright notice and this permission notice shall be
  included in all copies or substantial portions of the Software.
-
  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
  OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
@@ -75,16 +72,18 @@ function autocomplete(parent) {
         .attr("type", "text")
         .on("keyup", onKeyUp);
 
-      var dropDown = enter.append("div").attr("class", "bp-autocomplete-dropdown");
-
-      var searching = dropDown.append("div").attr("class", "bp-autocomplete-searching").text("Searching ...");
-
       var button = searchBar
         .append("button")
         .attr("class", "go")
         .append("i")
         .attr("class", "material-icons")
         .attr("id", "material-icons");
+
+
+      var dropDown = enter.append("div").attr("class", "bp-autocomplete-dropdown");
+
+      var searching = dropDown.append("div").attr("class", "bp-autocomplete-searching").text("Searching ...");
+
 
       document.getElementById("material-icons").innerHTML = "search";
 
@@ -291,3 +290,4 @@ function autocomplete(parent) {
   return component;
 
 }
+
