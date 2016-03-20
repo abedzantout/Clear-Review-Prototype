@@ -64,9 +64,6 @@ function autocomplete(parent) {
         .attr("id", "bp-ac")
         .attr("class", "bp-ac")
         .append("div")
-        .attr("class", "padded-row")
-        .append("div")
-        .attr("style", "bp-autocomplete-holder");
 
 
       container.attr("width", __width)
@@ -82,7 +79,7 @@ function autocomplete(parent) {
 
       var searching = dropDown.append("div").attr("class", "bp-autocomplete-searching").text("Searching ...");
 
-      var button = container.enter()
+      var button = searchBar
         .append("button")
         .attr("class", "go")
         .append("i")
@@ -127,7 +124,6 @@ function autocomplete(parent) {
       }
 
       function processResults() {
-
         var results = dropDown.selectAll(".bp-autocomplete-row").data(_matches, function (d) {
           return d[_dataField];
         });
