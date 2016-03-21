@@ -1,5 +1,9 @@
 /**
  Copyright (c) 2016 Abed Zantout, E3A Inc.
+
+ This project was originally create by Brightpoint Consulting, Inc,
+ to whom I share great respect
+
  Permission is hereby granted, free of charge, to any person
  obtaining a copy of this software and associated documentation
  files (the "Software"), to deal in the Software without
@@ -286,8 +290,5 @@ function autocomplete(parent) {
     return component;
   };
 
-
   return component;
-
 }
-
