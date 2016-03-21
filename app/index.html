@@ -16,7 +16,7 @@
   <!-- Add to homescreen for Chrome on Android -->
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="application-name" content="Web Starter Kit">
-  <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+  <link rel="icon" sizes="192x192" href="images/touch/Logo_192x192.png">
 
   <!-- Add to homescreen for Safari on iOS -->
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -25,7 +25,7 @@
   <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
 
   <!-- Tile icon for Win8 (144x144 + tile color) -->
-  <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+  <meta name="msapplication-TileImage" content="images/touch/Logo_128x128.png">
   <meta name="msapplication-TileColor" content="#2F3BA2">
 
   <!-- Color the status bar on mobile devices -->
@@ -43,7 +43,7 @@
   material.blue-orange.min.css
   material.purple-indigo.min.css
   -->
-  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.purple-indigo.min.css">
+  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.blue-orange.min.css">
 
   <!-- Material Design icons -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -362,7 +362,7 @@
   var keys;
 
   //Load US States as options from CSV - but this can also be created dynamically
-  d3.csv("search_files/states.csv", function (csv) {
+  d3.csv("search_files/courses.csv", function (csv) {
     keys = csv;
     start();
   });
@@ -378,6 +378,7 @@
     var mc = autocomplete(document.getElementById('search-bar'))
       .keys(keys)
       .dataField("Course")
+      .labelField("Code")
       .placeHolder("Search for course or professor")
       .width(window.width)
       .height(window.height)
