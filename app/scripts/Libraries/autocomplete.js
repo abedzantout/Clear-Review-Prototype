@@ -76,8 +76,7 @@ function autocomplete(parent) {
         .attr("type", "text")
         .on("keyup", onKeyUp);
 
-      var button = searchBar
-        .append("button")
+      searchBar.append("button")
         .attr("class", "go")
         .append("i")
         .attr("class", "material-icons")

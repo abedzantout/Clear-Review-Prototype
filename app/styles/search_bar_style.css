@@ -156,7 +156,6 @@ will be correctly compiled during `gulp serve` and `gulp`
   width: inherit;
   background-color: black;
   padding: 6px;
-  border-radius: 2px;
   margin-bottom: 5px;
   font-size: 14px;
   color: black;
@@ -170,9 +169,8 @@ will be correctly compiled during `gulp serve` and `gulp`
 
 .bp-autocomplete-dropdown {
   border-color: #ececec;
-  border-width: 1px;
+  border-width: 0px;
   border-style: solid;
-  border-radius: 2px;
   width: 60%;
   padding: 6px;
   cursor: pointer;
@@ -181,8 +179,10 @@ will be correctly compiled during `gulp serve` and `gulp`
   /*top: 32px;
   left: 0px;
   */
+  border-color: black;
+  border-top: solid;
   margin-top: -6px;
-  background-color: lightslategray;
+  background-color: white;
 }
 
 .bp-autocomplete-searching {
@@ -261,7 +261,6 @@ will be correctly compiled during `gulp serve` and `gulp`
   border-style: solid;
   border-color: #F2F2F2;
   border-width: 2px;
-  border-radius: 4px;
   padding: 6px;
   background-color: #ffffff;
   margin-top: 10px;
