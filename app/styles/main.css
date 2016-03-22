@@ -19,6 +19,10 @@ Note: any .css or .scss files included in the 'styles' directory
 will be correctly compiled during `gulp serve` and `gulp`
  */
 
+span.tab {
+  padding: 5px;
+}
+
 html, body {
   font-family: 'Roboto', 'Helvetica', sans-serif;
   margin: 0;
@@ -27,9 +31,7 @@ html, body {
   height: 100%;
   background: #e8eaf6;
   -webkit-font-smoothing: antialiased;
-
 }
-
 *, div {
   box-sizing: border-box;
 }
@@ -228,3 +230,27 @@ html, body {
 .mdl-demo .mdl-menu__container {
   z-index: 99;
 }
+
+/*Card design*/
+
+.demo-card-square .mdl-card {
+
+  display: inline-block;
+  width: 230px;
+  height: 200px;
+}
+
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+  background: #303f9f bottom right 20%;
+  display: inline-block;
+  /* url('../assets/demos/dog.png') bottom right 15% no-repeat #46B6AC;*/
+}
+
+.demo-card-square > .mdl-card__title-text {
+  padding: 5px;
+  text-align: center;
+  margin: 0 auto;
+  display: inline-block;
+}
+
