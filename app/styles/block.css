@@ -1,0 +1,33 @@
+.block {
+  display: inline-block;
+  width: 177px;
+  height: 152px;
+  border: 2px solid #33013B;
+  border-radius: 2px;
+  vertical-align: text-bottom;
+  text-align: center;
+  margin: 15px;
+}
+
+.block:hover {
+  border: 2px solid #8d7d9b;
+}
+
+.blurredcrs {
+  display: block;
+  width: 173px;
+  height: 126px;
+  border-bottom: inherit;
+  background: #DCDCDC;
+  margin-bottom: 3px;
+
+}
+
+#addcourse {
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 74px;
+  top: 49px;
+}
