@@ -43,7 +43,7 @@
   material.blue-orange.min.css
   material.purple-indigo.min.css
   -->
-  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.blue-orange.min.css">
+  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.purple-indigo.min.css">
 
   <!-- Material Design icons -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -360,6 +360,7 @@
 <script>
   //Variable to hold autocomplete options
   var keys;
+  var State;
 
   //Load US States as options from CSV - but this can also be created dynamically
   d3.csv("search_files/courses.csv", function (csv) {
@@ -378,7 +379,6 @@
     var mc = autocomplete(document.getElementById('search-bar'))
       .keys(keys)
       .dataField("Course")
-      .labelField("Code")
       .placeHolder("Search for course or professor")
       .width(window.width)
       .height(window.height)

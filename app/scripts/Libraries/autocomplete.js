@@ -29,8 +29,8 @@ function autocomplete(parent) {
     _delay = 0,
     _selection,
     _margin = {top: 30, right: 10, bottom: 50, left: 80},
-    __width = 1000,
-    __height = 1000,
+    __width = 2000,
+    __height = 2000,
     _placeHolder = "Search",
     _width,
     _height,
@@ -46,6 +46,8 @@ function autocomplete(parent) {
 
   _selection = d3.select(parent);
 
+
+  //TODO: modularize components
   function component() {
     _selection.each(function (data) {
 
@@ -87,7 +89,7 @@ function autocomplete(parent) {
 
       var searching = dropDown.append("div").attr("class", "bp-autocomplete-searching").text("Searching ...");
 
-
+      //TODO: embed in search bar
       document.getElementById("material-icons").innerHTML = "search";
 
       hideSearching();
