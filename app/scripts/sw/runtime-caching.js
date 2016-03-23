@@ -1,7 +1,7 @@
 /*!
  *
- *  Web Starter Kit
- *  Copyright 2015 Google Inc. All rights reserved.
+ *  Clear Review
+ *  Copyright 2016 E3A Inc. All rights reserved.
  *
  *  Licensed under the Apache License, Version 2.0 (the "License");
  *  you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@
  *  limitations under the License
  *
  */
-/* eslint-env worker */
+/* E3A worker*/
 // global.toolbox is defined in a different script, sw-toolbox.js, which is part of the
 // https://github.com/GoogleChrome/sw-toolbox project.
 // That sw-toolbox.js script must be executed first, so it needs to be listed before this in the

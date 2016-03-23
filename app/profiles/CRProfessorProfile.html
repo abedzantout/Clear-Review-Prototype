@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Clear Review - Professor Profile</title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" property="">
+  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.purple-indigo.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="search_bar_style.css">
+  <link rel="stylesheet" href="../styles/block.css">
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="An application that allows student to review a professor or a course">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clear Review</title>
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <!-- Web Application Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="Web Starter Kit">
+  <link rel="icon" sizes="192x192" href="images/touch/Logo_192x192.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
+  <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="images/touch/Logo_128x128.png">
+  <meta name="msapplication-TileColor" content="#2F3BA2">
+
+  <!-- Color the status bar on mobile devices -->
+  <meta name="theme-color" content="#2F3BA2">
+
+  <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+  <!--
+  <link rel="canonical" href="http://www.example.com/">
+  -->
+
+  <!-- Material Design Lite page styles:
+  You can choose other color schemes from the CDN, more info here http://www.getmdl.io/customize/index.html
+  Format: material.color1-color2.min.css, some examples:
+  material.red-teal.min.css
+  material.blue-orange.min.css
+  material.purple-indigo.min.css
+  -->
+  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.purple-indigo.min.css">
+
+  <!-- Material Design icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- Your styles Here-->
+  <link rel="stylesheet" href="styles/main.css">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/search_bar_style.css">
+  <!-- End of styles-->
+
+
+</head>
+<body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs ">
+  <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary mdl-layout__header--waterfall">
+    <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+      <div class="search-bar" id="search-bar">
+
+
+        <!--<form>
+          <a href="#" class="logo" title="clear_review_logo"></a>
+          <input type="search" class="search" placeholder="Search..."/>
+          <button class="go"><i class="material-icons">search</i></button>
+        </form>-->
+      </div>
+    </div>
+
+
+    <div class="mdl-layout--large-screen-only mdl-layout__header-row ">
+    </div>
+    <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+      <!--Main Navigation-->
+      <a href="#overview" class="mdl-layout__tab  is-active">Courses</a>
+      <a href="#professors" class="mdl-layout__tab ">Professors</a>
+      <a href="#myCourses" class="mdl-layout__tab ">My courses</a>
+
+      <!-- End of main navigation-->
+
+    </div>
+  </header>
+  <div class="container-fluid">
+    <div class="col-sm-8">
+      <h4>This professor taught...</h4>
+      <div id="courses">
+        <div class="block">
+          <div class="blurredcrs">
+            <img src=""/>
+          </div>
+          <span id="coursename_1">Course Name</span>
+        </div>
+        <div class="block">
+          <div class="blurredcrs">
+            <img src=""/>
+          </div>
+          <span id="coursename_2">Course Name</span>
+        </div>
+        <div class="block">
+          <div class="blurredcrs">
+            <img src=""/>
+          </div>
+          <span id="coursename_3">Course Name</span>
+        </div>
+        <div class="block">
+          <div class="blurredcrs">
+            <img src=""/>
+          </div>
+          <span id="coursename_4">Course Name</span>
+        </div>
+        <div class="block">
+          <div class="blurredcrs">
+            <img src=""/>
+          </div>
+          <span id="coursename_5">Course Name</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4" style="background: lightgray;  padding: 10px; height: 100%;">
+      <img class="thumbnail" src="professorX.jpg" style="float: left; margin: 10px;" width="200"/>
+      <div class="row" style="display: inline; margin: 5px;">
+        <h4>Ti. Prof Name</h4>
+        <ul id="profinfo" style="list-style-type: none">
+          <li>Department of Something or Other</li>
+          <li>Email: email09@aub.mail.edu</li>
+        </ul>
+      </div>
+      <div class="row" id="profbio" style="display: block; margin: 15px;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+          enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>
+  </div>
+  <footer class="container-fluid">
+    <p></p>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>

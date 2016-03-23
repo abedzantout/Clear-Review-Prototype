@@ -1,0 +1,292 @@
+/**
+ * Copyright 2016 E3A Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/*
+Note: any .css or .scss files included in the 'styles' directory
+will be correctly compiled during `gulp serve` and `gulp`
+ */
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700);
+
+
+[class*="entypo-"]:before {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+
+
+/*the whole form*/
+.search-bar {
+  width: 80%;
+  height: 80px;
+  background: inherit;
+  padding: 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+}
+
+/*search bar + logo + icon design*/
+.search-bar form {
+  width: 120%;
+  height: 70px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/*logo design*/
+.search-bar a.logo {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-box-ordinal-group: 1;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  width: inherit;
+  height: inherit;
+  max-width: 180px;
+  margin-right: 20px;
+  -webkit-transition: all 0.05s ease-in-out;
+  transition: all 0.05s ease-in-out;
+  visibility: visible;
+  opacity: 1;
+  background-image: url("../images/logo/ClearReviewLogo.png");
+  background-position: 0 center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  float: left;
+}
+
+
+/* Search bar design*/
+/*.search-bar .search {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  outline: none;
+  border: none;
+  border-radius: 0;
+  color: black;
+  background: #fff;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  height: 30px;
+  -webkit-transition: all 0.05s ease-in-out;
+  transition: all 0.05s ease-in-out;
+  -webkit-appearance: none;
+  height: inherit;
+}
+}*/
+
+/* disregard*/
+/*.search-bar .search:focus {
+  height: 60px;
+  margin-left: -15px;
+  padding: 10px 15px;
+}
+.search-bar .search:focus + .go {
+  height: 80px;
+  margin-right: -15px;
+  max-width: 80px;
+  color: #533687;
+}
+.search-bar .search:focus + .go + a.logo {
+  visibility: visible;
+  opacity: 0;
+  max-width: 0px;
+  margin-right: 0;
+}*/
+
+.search-bar .go {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-box-ordinal-group: 4;
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+  max-width: 50px;
+  display: inline-block;
+  border: none;
+  background: #fffff;
+  color: blue;
+  height: 100%;
+  -webkit-transition: all 0.05s ease-in-out;
+  transition: all 0.05s ease-in-out;
+  font-size: 21px;
+  outline: none;
+}
+
+.form-control {
+  outline: 0;
+  border-color: #ECECEC;
+  border-style: solid;
+  border-width: 1px;
+  width: inherit;
+  background-color: black;
+  padding: 6px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: black;
+  align-items: center;
+}
+
+.bp-autocomplete-holder {
+  position: relative;
+
+}
+
+.bp-autocomplete-dropdown {
+  border-color: #ececec;
+  border-width: 0px;
+  border-style: solid;
+  width: 50%;
+  padding: 6px;
+  cursor: pointer;
+  z-index: 9999;
+  position: absolute;
+  /*top: 32px;
+  left: 0px;
+  */
+  border-color: black;
+  border-top: solid;
+  margin-top: -6px;
+  background-color: white;
+}
+
+.bp-autocomplete-searching {
+  color: darkred;
+  font-size: 14px;
+}
+
+
+.bp-autocomplete-row {
+  padding: 5px;
+  color: #000000;
+  margin-bottom: 4px;
+
+}
+
+/*highlights cell*/
+.bp-autocomplete-selected-row, .bp-autocomplete-row:hover {
+  background-color: lightblue;
+  color: #ffffff;
+}
+
+.search-bar form {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.search-bar form .bp-ac {
+  /*font-family: "bariol_regularregular", Arial;
+  letter-spacing: 0.01em;
+  font-size: 14px;
+  padding: 40px;
+  text-rendering: optimizeLegibility;
+  height: 100%;
+  width: 80%;*/
+  margin: 0px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  font-size: 14px;
+  order: 2;
+  text-rendering: optimizeLegibility;
+  outline: none;
+  border: none;
+  color: white;
+  background: inherit;
+  padding-left: 40px;
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 0.05s ease-in-out;
+  transition: all 0.05s ease-in-out;
+  -webkit-appearance: none;
+  text-align: left;
+  display: inline-block;
+  align-items: center;
+
+}
+
+.padded-row {
+  margin-top: 10px;
+}
+
+.search-box {
+  position: relative;
+  border-style: solid;
+  border-color: #F2F2F2;
+  border-width: 2px;
+  padding: 6px;
+  background-color: #ffffff;
+  margin-top: 10px;
+}
+
+.form-control {
+  outline: 0;
+  border-color: #ECECEC;
+
+  border-width: 1px;
+  height: 50px;
+  background-color: #ffffff;
+  padding: 6px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  width: 100%;
+  display: inline-block;
+}
+
+.form-control:-webkit-autofill {
+  background-color: #fff !important;
+}
+
+.bp-autocomplete-highlight {
+  font-weight: bold;
+  color: red;
+}
+

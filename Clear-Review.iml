@@ -4,5 +4,9 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="angular.js" level="project" />
+    <orderEntry type="library" name="material.js" level="project" />
+    <orderEntry type="library" name="d3.js" level="project" />
+    <orderEntry type="library" name="autocomplete.js" level="project" />
   </component>
 </module>
