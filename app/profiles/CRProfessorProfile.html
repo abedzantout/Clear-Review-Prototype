@@ -73,67 +73,43 @@
 
       </div>
     </div>
+    <style>
+      .demo-card-wide.mdl-card.mdl-shadow--2dp.professor-profile {
+        float: right;
+        width: 500px;
+        height: 100%;
+      }
 
+      .demo-card-wide > .mdl-card__title {
+        color: #fff;
+        height: 176px;
+        background: lightblue center / cover;
+      }
+      .demo-card-wide > .mdl-card__menu {
+        color: #fff;
+      }
 
-    <!--<div class="mdl-layout--large-screen-only mdl-layout__header-row ">
-    </div> -->
+    </style>
+
   </header>
-  <div class="container-fluid">
-    <div class="col-sm-8">
-      <h4>This professor taught...</h4>
-      <div id="courses">
-        <div class="block">
-          <div class="blurredcrs">
-            <img src=""/>
-          </div>
-          <span id="coursename_1">Course Name</span>
-        </div>
-        <div class="block">
-          <div class="blurredcrs">
-            <img src=""/>
-          </div>
-          <span id="coursename_2">Course Name</span>
-        </div>
-        <div class="block">
-          <div class="blurredcrs">
-            <img src=""/>
-          </div>
-          <span id="coursename_3">Course Name</span>
-        </div>
-        <div class="block">
-          <div class="blurredcrs">
-            <img src=""/>
-          </div>
-          <span id="coursename_4">Course Name</span>
-        </div>
-        <div class="block">
-          <div class="blurredcrs">
-            <img src=""/>
-          </div>
-          <span id="coursename_5">Course Name</span>
-        </div>
+  <main class="mdl-layout__content ">
+    <div class="demo-card-wide mdl-card mdl-shadow--2dp professor-profile " id="professor-bio">
+      <div class="mdl-card__title">
+        <h2 class="mdl-card__title-text">Professor's name</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+        Professor's biography (if it exists)
+        <br/>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Mauris sagittis pellentesque lacus eleifend lacinia...
+      </div>
+      <div class="mdl-card__actions mdl-card--border">
+        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+          Detailed Rating
+        </a>
       </div>
     </div>
 
-    <div class="col-sm-4" style="background: lightgray;  padding: 10px; height: 100%;">
-
-      <!--TODO: to update picture --->
-      <img class="thumbnail" src="professorX.jpg" style="float: left; margin: 10px;" width="200"/>
-      <div class="row" style="display: inline; margin: 5px;">
-        <h4>Ti. Prof Name</h4>
-        <ul id="profinfo" style="list-style-type: none">
-          <li>Department of Something or Other</li>
-          <li>Email: email09@aub.mail.edu</li>
-        </ul>
-      </div>
-      <div class="row" id="profbio" style="display: block; margin: 15px;">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-          enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-    </div>
   </div>
   <footer class="container-fluid">
     <p></p>
