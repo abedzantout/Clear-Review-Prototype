@@ -19,6 +19,7 @@ window.onload = function () {
     var link = document.createElement("a");
     link.className = "mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect";
     link.innerHTML = "View";
+    link.href = "profiles/courseProfile.html"
     var rLink = document.createElement("a");
     rLink.className = "mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect";
     rLink.innerHTML = "Rate";
