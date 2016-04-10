@@ -8,5 +8,7 @@
     <orderEntry type="library" name="material.js" level="project" />
     <orderEntry type="library" name="d3.js" level="project" />
     <orderEntry type="library" name="autocomplete.js" level="project" />
+    <orderEntry type="library" name="Chart.js" level="project" />
+    <orderEntry type="library" name="Clear-Review node_modules" level="project" />
   </component>
 </module>
