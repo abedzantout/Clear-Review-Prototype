@@ -1,5 +1,7 @@
 # Clear Review
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/abedzantout/Clear-Review-Prototype.svg)](https://greenkeeper.io/)
+
 This project is a prototype for our software engineering term project.
 
 ##License
